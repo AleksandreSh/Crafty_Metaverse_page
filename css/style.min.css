@@ -1418,7 +1418,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -2;
+  z-index: 1;
 }
 @media (max-width: 610px) {
   .shared {
@@ -1553,7 +1553,7 @@ body {
   height: 560px;
   padding-top: 70px;
   text-transform: uppercase;
-  max-width: 668px;
+  max-width: 590px;
   position: relative;
   padding-left: 65px;
 }
@@ -1623,6 +1623,22 @@ body {
     max-height: 383px;
     order: 1;
   }
+}
+
+.container__capter {
+  display: flex;
+  margin-top: 16px;
+  margin-left: 5px;
+}
+
+.capter-slide {
+  display: none;
+}
+
+.capter-slide h4 {
+  margin: 0;
+  font-size: 18px;
+  color: white;
 }
 
 .progress__wrapper {
@@ -2519,5 +2535,184 @@ body {
   }
   .none {
     display: none;
+  }
+}
+.game {
+  position: relative;
+  padding: 110px 0px 0px 0px;
+  display: flex;
+  background-image: url(../img/game/game-bg.webp);
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+@media (max-width: 1440px) {
+  .game {
+    padding: 0px 0px 0px 0px;
+  }
+}
+.game__container {
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 1150px) {
+  .game__container {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+}
+.game__container-wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 480px 0 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1920px;
+  width: 100%;
+  gap: 90px;
+}
+@media (max-width: 1440px) {
+  .game__container-wrapper {
+    gap: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .game__container-wrapper {
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+@media (max-width: 566px) {
+  .game__container-wrapper {
+    padding: 137px 0 300px;
+  }
+}
+.game .container__img-left {
+  width: 500px;
+  right: 102.5%;
+  top: 7.5%;
+}
+@media (max-width: 1440px) {
+  .game .container__img-left {
+    right: 80.5%;
+  }
+}
+@media (max-width: 1024px) {
+  .game .container__img-left {
+    flex: 0 0 33%;
+    order: 3;
+  }
+}
+.game .container__img-right {
+  width: 500px;
+  left: 106%;
+  top: -1%;
+}
+@media (max-width: 1440px) {
+  .game .container__img-right {
+    left: 80%;
+  }
+}
+@media (max-width: 1024px) {
+  .game .container__img-right {
+    flex: 0 0 33%;
+    order: 2;
+  }
+}
+.game .container__info {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+@media (max-width: 1024px) {
+  .game .container__info {
+    flex-wrap: wrap;
+  }
+}
+.game .container__title {
+  text-transform: uppercase;
+  padding-top: 70px;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-bottom: 30px;
+}
+@media (max-width: 567px) {
+  .game .container__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 15px;
+  }
+}
+.game .container__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  max-width: 565px;
+}
+@media (max-width: 567px) {
+  .game .container__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+.game .container__center {
+  position: relative;
+  text-align: center;
+  height: 645px;
+}
+@media (max-width: 1024px) {
+  .game .container__center {
+    flex: 0 0 70%;
+    order: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+  }
+}
+.game .container__center::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background-color: #56ffeb;
+  box-shadow: 0 4px 13px rgba(191, 58, 255, 0.44);
+  border-radius: 62px;
+}
+.game .container__center::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/game/game-lines.svg);
+  z-index: 0;
+}
+
+.text__info {
+  margin-bottom: 30px;
+}
+@media (max-width: 567px) {
+  .text__info {
+    margin-bottom: 27px;
   }
 }
