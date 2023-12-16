@@ -1318,7 +1318,7 @@ body {
   position: relative;
   z-index: 10;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .footer {
     display: none;
   }
@@ -3691,13 +3691,17 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   margin-bottom: 15px;
 }
+@media (max-width: 1024px) {
+  .faq__info .info__btn {
+    text-align-last: center;
+  }
+}
 @media (max-width: 425px) {
   .faq__info .info__btn {
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
     letter-spacing: 0em;
-    text-align: left;
     padding: 10px 47px 26px 10px;
   }
 }
