@@ -2988,12 +2988,17 @@ body {
 }
 @media (max-width: 1150px) {
   .invest__body-top {
-    margin-bottom: 299px;
+    margin-bottom: 275px;
+  }
+}
+@media (max-width: 1150px) {
+  .invest__body-top {
+    margin-bottom: 110px;
   }
 }
 @media (max-width: 425px) {
   .invest__body-top {
-    margin-bottom: 350px;
+    margin-bottom: 50px;
   }
 }
 .invest__body-bottom {
