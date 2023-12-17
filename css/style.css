@@ -1576,6 +1576,7 @@ body {
   }
 }
 .shared__con {
+  z-index: 4;
   padding: 0 0px 0px 60px;
   display: flex;
   flex: 1 1 auto;
@@ -2056,6 +2057,11 @@ body {
   left: 860px;
   background: url("../img/Road-map/forth.webp") 0 0/100% no-repeat;
 }
+@media (max-width: 1915px) {
+  .roadmap__table-item:nth-child(4)::before {
+    left: 538px;
+  }
+}
 @media (max-width: 1705px) {
   .roadmap__table-item:nth-child(4)::before {
     left: 55%;
@@ -2071,12 +2077,59 @@ body {
     left: 0%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 866px) {
   .roadmap__table-item:nth-child(4)::before {
     left: -22%;
     width: 384px;
     height: 654px;
+    top: 460%;
+  }
+}
+@media (max-width: 565px) {
+  .roadmap__table-item:nth-child(4)::before {
+    left: 538px;
+    top: 433%;
+    left: 143px;
+  }
+}
+@media (max-width: 390px) {
+  .roadmap__table-item:nth-child(4)::before {
     top: 436%;
+    left: -102px;
+  }
+}
+@media (max-width: 1024px) {
+  .roadmap__table-item:nth-child(4) {
+    background: url("../img/Road-map/forth.webp") 0 0/100% 100% no-repeat;
+  }
+  .roadmap__table-item:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    width: 713px;
+    height: 728px;
+    top: 67%;
+    left: 23%;
+    background: url("../img/Road-map/forth.webp") 0 0/100% 100% no-repeat;
+  }
+}
+@media (max-width: 1650px) {
+  .roadmap__table-item:nth-child(4)::before {
+    top: 58.5%;
+    left: 28%;
+  }
+}
+@media (max-width: 768px) {
+  .roadmap__table-item:nth-child(4)::before {
+    top: 65%;
+    left: 2%;
+    background: url("../img/Road-map/forth.webp") 0 0/60% 60% no-repeat;
+  }
+}
+@media (max-width: 425px) {
+  .roadmap__table-item:nth-child(4)::before {
+    top: 71%;
+    left: 2%;
+    background: url("../img/Road-map/forth.webp") 0 0/50% 50% no-repeat;
   }
 }
 .roadmap__item {
@@ -2774,7 +2827,7 @@ body {
 .game {
   position: relative;
   padding: 110px 0px 0px 0px;
-  background-image: url(../img/Game/game-bg.webp);
+  background-image: url("../img/Game/game-bg.webp");
   align-items: center;
   background-position: center;
   background-size: cover;
@@ -2978,7 +3031,7 @@ body {
   -webkit-transform: rotate(-9.09deg);
   -ms-transform: rotate(-9.09deg);
   transform: rotate(-9.09deg);
-  background: rgba(255, 255, 255, 0.04);
+  background-image: url(../img/Game/baner.png);
   -webkit-backdrop-filter: blur(200px);
   backdrop-filter: blur(200px);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -3047,6 +3100,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .baner__container {
+  background-image: url("../img/Game/baner.png");
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -3062,6 +3116,19 @@ body {
 }
 .baner__container-small {
   animation: 10s linear infinite baner;
+  background-image: url("../img/Game/baner.png");
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-transform: translate3d(var(--move-initial), 0, 0);
+  transform: translate3d(var(--move-initial), 0, 0);
+  -webkit-animation: 12s linear infinite baner;
+  animation: 12s linear infinite baner;
+  white-space: nowrap;
 }
 
 @-webkit-keyframes baner {
@@ -3693,7 +3760,7 @@ body {
 }
 @media (max-width: 768px) {
   .team__column:nth-child(2) .card__img {
-    order: 1;
+    order: 0;
   }
 }
 .team__column:nth-child(2) .card__name {
@@ -3840,6 +3907,23 @@ body {
   text-transform: uppercase;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   margin-bottom: 15px;
+}
+.faq__info .info__btn::before, .faq__info .info__btn::after {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  width: 34px;
+  height: 5px;
+  right: 7px;
+  top: 32px;
+  background-color: #fff;
+  transition: transform 0.3s ease 0s;
+}
+.faq__info .info__btn::after {
+  transform: rotate(-90deg);
+}
+.faq__info .info__btn._active::after {
+  transform: rotate(0deg);
 }
 @media (max-width: 1024px) {
   .faq__info .info__btn {
