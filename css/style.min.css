@@ -4133,6 +4133,7 @@ body {
   margin: 0px auto;
 }
 .media__con::before {
+  z-index: -1;
   content: "";
   position: absolute;
   width: 978px;
@@ -4227,6 +4228,7 @@ body {
   }
 }
 .media::after {
+  z-index: -1;
   content: "";
   position: absolute;
   width: 1113px;
