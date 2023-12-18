@@ -104,7 +104,7 @@
 
       <h2 class="about__subtitle">About Us</h2>
 
-      <div class="swiper-container-1">
+      <div class="swiper-container-first">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <p class="about__text text-common">
@@ -131,6 +131,8 @@
             <div class="progress-bar swiper-pagination-progressbar-fill"></div>
           </div>
         </div>
+        <!-- <div class="swiper-pagination about__pagination"></div>
+        <img class="about__pagination-ellipse" src="img/about-us/pagination.svg" alt="" /> -->
       </div>
       <img class="progress-bar-svg" src="img/about-us/pagination.svg" alt="" />
       <div class="container__capter">
@@ -419,6 +421,19 @@
         <div class="brand__column">
           <div class="brand__item">
             <div class="item__img">
+              <svg
+                class="star-card"
+                width="46"
+                height="46"
+                viewBox="0 0 46 46"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23 0L26.2527 19.7473L46 23L26.2527 26.2527L23 46L19.7473 26.2527L0 23L19.7473 19.7473L23 0Z"
+                  fill="white"
+                />
+              </svg>
               <img src="img/our-brands/brand1.svg" alt="" />
             </div>
 
@@ -480,6 +495,13 @@
 </section>
 
         <section class="resources">
+  <div class="blur">
+    <picture>
+      <source srcset="img/our-resources/Ellipse-5.webp" type="image/webp" />
+      <img class="blur-first" src="img/our-resources/Ellipse-5.png" alt="" loading="lazy" />
+    </picture>
+  </div>
+
   <div class="resources__con container">
     <div class="resources__body">
       <div class="resources__info">
@@ -489,7 +511,10 @@
       </div>
       <div class="resources__container">
         <div class="container__left background background-purple">
-          <img class="resources__logo" src="img/our-resources/Vector.png" alt="logo" />
+          <picture>
+            <source srcset="img/our-resources/Vector.webp" type="image/webp" />
+            <img class="resources__logo" src="img/our-resources/Vector.png" alt="logo" loading="lazy" />
+          </picture>
 
           <h4 class="resources__head">About toKen $Cmeta</h4>
 
@@ -499,6 +524,19 @@
           </p>
 
           <a href="#" class="button__link button">Play (Coming Soon)</a>
+          <svg
+            class="star-text"
+            width="46"
+            height="46"
+            viewBox="0 0 46 46"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23.0002 0L26.2529 19.7473L46.0002 23L26.2529 26.2527L23.0002 46L19.7476 26.2527L0.000244141 23L19.7476 19.7473L23.0002 0Z"
+              fill="white"
+            />
+          </svg>
         </div>
 
         <div class="container__right">
@@ -610,8 +648,10 @@
               $CMETA
             </p>
           </div>
-
-          <img class="container__img" src="img/our-resources/logoMAIN.webp" alt="image" />
+          <picture>
+            <source srcset="img/our-resources/logoMAIN.webp" type="image/webp" />
+            <img class="container__img" src="img/our-resources/logoMAIN.png" alt="image" loading="lazy" />
+          </picture>
         </div>
       </div>
     </div>
@@ -805,7 +845,10 @@
     <div class="game__container-wrapper">
       <div class="container__info">
         <div class="container__img-left">
-          <img src="img/Game/img-left.webp" alt="woman" />
+          <picture>
+            <source srcset="img/Game/img-left.webp" type="image/webp" />
+            <img src="img/Game/img-left.png" alt="woman" loading="lazy" />
+          </picture>
         </div>
 
         <div class="container__center">
@@ -827,10 +870,17 @@
         </div>
 
         <div class="container__img-right">
-          <img src="img/Game/img-right.webp" alt="man" />
+          <picture>
+            <source srcset="img/Game/img-right.webp" type="image/webp" />
+            <img src="img/Game/img-right.png" alt="man" loading="lazy" />
+          </picture>
         </div>
       </div>
     </div>
+    <picture>
+      <source srcset="img/Game/button-front.webp" type="image/webp" />
+      <img class="button-front" src="img/Game/button-front.png" alt="button" loading="lazy" />
+    </picture>
   </div>
 </section>
 
@@ -840,42 +890,58 @@
       <div class="invest__body-top">
         <div class="invest__container">
           <div class="container__left background _long">
-            <div class="container__info">
-              <div class="container__info-left">
-                <h2 class="container__info-title">Explore Now</h2>
+            <div class="container__info-left">
+              <h2 class="container__info-title">Explore Now</h2>
 
-                <div class="container__info-text">
-                  Each human will control his/her own digital identity in the Crafty Metaverse space.
-                </div>
-                <div class="container__info-text-mobile">
+              <div class="container__info-text">
+                Each human will control his/her own digital identity in the Crafty Metaverse space.
+              </div>
+              <div class="container__info-text-mobile">
+                A virtual marketplace to allow the users to trade and stake our $CMETA token and their NFTs. Negotiate
+                with the digital avatars of other users to sell your NFTs at the best prices and generate passive income
+                while playing.
+              </div>
+              <a href="#" class="button__link button">Invest Now</a>
+            </div>
+            <div class="container__info-right">
+              <div class="container__text">
+                <p>
                   A virtual marketplace to allow the users to trade and stake our $CMETA token and their NFTs. Negotiate
                   with the digital avatars of other users to sell your NFTs at the best prices and generate passive
                   income while playing.
-                </div>
-                <a href="#" class="button__link button">Invest Now</a>
-              </div>
-              <div class="container__info-right">
-                <div class="container__text">
-                  <p>
-                    A virtual marketplace to allow the users to trade and stake our $CMETA token and their NFTs.
-                    Negotiate with the digital avatars of other users to sell your NFTs at the best prices and generate
-                    passive income while playing.
-                  </p>
-                </div>
+                </p>
               </div>
             </div>
           </div>
 
           <div class="container__right">
             <div class="invest__images">
-              <img src="img/invest/window.webp" alt="window" />
+              <picture>
+                <source srcset="img/invest/window.webp" type="image/webp" />
+                <img src="img/invest/window.png" alt="window" loading="lazy" />
+              </picture>
 
               <div class="front-screen">
-                <img src="img/invest/Group-1.webp" alt="group" class="first" />
-                <img src="img/invest/Group-2.webp" alt="group" class="second" />
-                <img src="img/invest/picture-dynamic-gradient.webp" alt="picture" class="picture" />
-                <img src="img/invest/money-iso-gradient.webp" alt="money" class="money" />
-                <img src="img/invest/link-iso-gradient.webp" alt="chain" class="chain" />
+                <picture>
+                  <source srcset="img/invest/Group-1.webp" type="image/webp" />
+                  <img src="img/invest/Group-1.png" alt="group" class="first" loading="lazy" />
+                </picture>
+                <picture>
+                  <source srcset="img/invest/Group-2.webp" type="image/webp" />
+                  <img src="img/invest/Group-2.png" alt="group" class="second" loading="lazy" />
+                </picture>
+                <picture>
+                  <source srcset="img/invest/picture-dynamic-gradient.webp" type="image/webp" />
+                  <img src="img/invest/picture-dynamic-gradient.png" alt="picture" class="picture" loading="lazy" />
+                </picture>
+                <picture>
+                  <source srcset="img/invest/money-iso-gradient.webp" type="image/webp" />
+                  <img src="img/invest/money-iso-gradient.png" alt="money" class="money" loading="lazy" />
+                </picture>
+                <picture>
+                  <source srcset="img/invest/link-iso-gradient.webp" type="image/webp" />
+                  <img src="img/invest/link-iso-gradient.png" alt="chain" class="chain" loading="lazy" />
+                </picture>
               </div>
             </div>
           </div>
@@ -905,7 +971,10 @@
       </div>
     </div>
   </div>
-  <img src="img/invest/MaskGroup.webp" alt="background" class="invest__background" />
+  <picture>
+    <source srcset="img/invest/MaskGroup.webp" type="image/webp" />
+    <img src="img/invest/MaskGroup.png" alt="background" class="invest__background" loading="lazy" />
+  </picture>
 </section>
  <section class="team" id="team">
   <div class="blur">
@@ -935,6 +1004,9 @@
         <img class="blur" src="img/our-team/blur7.png" alt="" loading="lazy"
       /></picture>
     </div>
+    <picture>
+      <img class="blur lines" src="img/our-team/lines.png" alt="" loading="lazy" />
+    </picture>
   </div>
   <div class="team_con container">
     <div class="team__body">
@@ -946,7 +1018,12 @@
       <div class="team__container">
         <div class="team__column">
           <div class="card">
-            <div class="card__img"><img src="img/our-team/man-1.webp" alt="" /></div>
+            <div class="card__img">
+              <picture>
+                <source srcset="img/our-team/man-1.webp" type="image/webp" />
+                <img src="img/our-team/man-1.png" alt="" loading="lazy"
+              /></picture>
+            </div>
             <div class="card__info">
               <div class="card__profession">CTO/Creative Director</div>
 
@@ -975,7 +1052,12 @@
         </div>
         <div class="team__column">
           <div class="card">
-            <div class="card__img"><img src="img/our-team/man-2.webp" alt="" /></div>
+            <div class="card__img">
+              <picture>
+                <source srcset="img/our-team/man-2.webp" type="image/webp" />
+                <img src="img/our-team/man-2.png" alt="" loading="lazy" />
+              </picture>
+            </div>
             <div class="card__profession">Chief Financial Officer</div>
 
             <div class="card__name">Kwasi</div>
@@ -983,7 +1065,12 @@
         </div>
         <div class="team__column">
           <div class="card">
-            <div class="card__img"><img src="img/our-team/man-3.webp" alt="" /></div>
+            <div class="card__img">
+              <picture>
+                <source srcset="img/our-team/man-3.webp" type="image/webp" />
+                <img src="img/our-team/man-3.png" alt="" loading="lazy" />
+              </picture>
+            </div>
             <div class="team__column">
               <div class="card__profession">COO/Marketing Director</div>
 
@@ -993,7 +1080,12 @@
         </div>
         <div class="team__column">
           <div class="card">
-            <div class="card__img"><img src="img/our-team/man-4.webp" alt="" /></div>
+            <div class="card__img">
+              <picture>
+                <source srcset="img/our-team/man-4.webp" type="image/webp" />
+                <img src="img/our-team/man-4.png" alt="" loading="lazy" />
+              </picture>
+            </div>
             <div class="team__column">
               <div class="card__profession">CEO/Developer</div>
 
@@ -1253,17 +1345,18 @@
       <div class="media__swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <a href="https://twitter.com/" class="media__item"
-              ><picture>
+            <a href="https://twitter.com/" class="media__item">
+              <picture>
                 <source srcset="img/social-media/twiter.webp" type="image/webp" />
-                <img src="img/social-media/twiter.png" alt="" /></picture
-            ></a>
+                <img src="img/social-media/twiter.png" alt="" loading="lazy"
+              /></picture>
+            </a>
           </div>
           <div class="swiper-slide">
             <a href="https://web.telegram.org/a/" class="media__item">
               <picture>
                 <source srcset="img/social-media/telegram.webp" type="image/webp" />
-                <img src="img/social-media/telegram.png" alt=""
+                <img src="img/social-media/telegram.png" alt="" loading="lazy"
               /></picture>
             </a>
           </div>
@@ -1271,7 +1364,7 @@
             <a href="https://www.youtube.com/" class="media__item">
               <picture>
                 <source srcset="img/social-media/youtube.webp" type="image/webp" />
-                <img src="img/social-media/youtube.png" alt=""
+                <img src="img/social-media/youtube.png" alt="" loading="lazy"
               /></picture>
             </a>
           </div>
@@ -1293,7 +1386,7 @@
 
               <picture>
                 <source srcset="img/social-media/discord.webp" type="image/webp" />
-                <img src="img/social-media/discord.png" alt="" /></picture
+                <img src="img/social-media/discord.png" alt="" loading="lazy" /></picture
             ></a>
           </div>
         </div>
