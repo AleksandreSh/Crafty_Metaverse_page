@@ -3755,7 +3755,7 @@ body {
 }
 @media (max-width: 768px) {
   .invest {
-    background: url("../img/invest/MaskGroup.webp") 0 75%/90% no-repeat, url("../img/invest/MaskGroup.png") 0 75%/90% no-repeat;
+    background: url("../img/invest/MaskGroup.webp") 0 70%/90% no-repeat, url("../img/invest/MaskGroup.png") 0 70%/90% no-repeat;
   }
 }
 @media (max-width: 425px) {
@@ -3782,6 +3782,11 @@ body {
 @media (max-width: 1150px) {
   .invest__body-top {
     margin-bottom: 275px;
+  }
+}
+@media (max-width: 768px) {
+  .invest__body-top {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 425px) {
@@ -3822,11 +3827,12 @@ body {
     align-items: center;
     justify-content: center;
     align-self: auto;
-    padding: 67px 49px 28px 34px;
+    padding: 67px 0 5px 0;
   }
 }
 @media (max-width: 425px) {
   .invest__body-bottom {
+    padding: 67px 49px 28px 34px;
     padding: 0;
     height: 450px;
   }
