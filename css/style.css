@@ -1468,10 +1468,11 @@ body {
   left: 204px;
   height: 405px;
   width: 1px;
-  background-color: rgba(255, 255, 255, 0.4);
+  border: 4px solid rgb(127, 92, 255);
   transform: rotate(-90deg);
 }
 .swiper-pagination-progressbar-fill {
+  border: 4px solid rgb(127, 92, 255);
   background-color: #7f5cff !important;
   right: 10px !important;
 }
@@ -3084,8 +3085,13 @@ body {
 @media (max-width: 576px) {
   .resources__container .container__right .info-block:nth-child(3) {
     text-align: right;
-    bottom: 63px;
+    bottom: 133px;
     right: 53px;
+  }
+}
+@media (max-width: 390px) {
+  .resources__container .container__right .info-block:nth-child(3) {
+    bottom: 64px;
   }
 }
 .resources__container .container__right .info-block:nth-child(4) {
@@ -3107,9 +3113,14 @@ body {
 }
 @media (max-width: 576px) {
   .resources__container .container__right .info-block:nth-child(4) {
-    bottom: -30px;
+    bottom: 87px;
     left: 8px;
     gap: 0;
+  }
+}
+@media (max-width: 390px) {
+  .resources__container .container__right .info-block:nth-child(4) {
+    bottom: -30px;
   }
 }
 .resources__head {
@@ -3510,6 +3521,7 @@ body {
   }
 }
 .game-mobile__blur-top {
+  display: none;
   position: absolute;
   width: 500px;
   height: 500px;
@@ -3517,6 +3529,11 @@ body {
   top: 122px;
   left: -91px;
   transform: rotate(42deg);
+}
+@media (max-width: 1024px) {
+  .game-mobile__blur-top {
+    display: inline;
+  }
 }
 @media (max-width: 425px) {
   .game-mobile__blur-top {
@@ -3786,6 +3803,16 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.invest__container::before {
+  content: "";
+  z-index: -1;
+  width: 93%;
+  height: 50%;
+  position: absolute;
+  background: linear-gradient(42deg, rgba(58, 78, 255, 0) 0%, rgba(156, 58, 255, 0.14) 100%);
+  filter: blur(5px);
+  transition: filter 0.5s ease;
+}
 @media (max-width: 1440px) {
   .invest__container {
     flex-direction: column;
@@ -3799,44 +3826,21 @@ body {
   padding-left: 65px;
   padding-left: 65px;
 }
-.invest .container__left::before {
-  content: "";
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  bottom: 0;
-  left: 50%;
-  background: url("../img/invest/Star.svg") 0 0 no-repeat;
-  transform: translate(0px, 50%);
-}
 @media (max-width: 1150px) {
   .invest .container__left {
     margin-top: 0;
   }
-  .invest .container__left::before {
-    bottom: 40%;
-    left: 35%;
-    background: url("../img/invest/Star.svg") 0 0 no-repeat;
-  }
 }
 @media (max-width: 768px) {
   .invest .container__left {
-    padding: 40px 0px 200px 25px;
-  }
-  .invest .container__left::before {
-    bottom: 3%;
-    left: 68%;
-    background: url("../img/invest/Star.svg") 0 0 no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 @media (max-width: 425px) {
   .invest .container__left {
     padding: 50px 0px 199px 25px;
-  }
-  .invest .container__left::before {
-    bottom: 11%;
-    left: 71%;
-    background: url("../img/invest/Star.svg") 0 0 no-repeat;
   }
 }
 .invest .container__right {
@@ -3869,7 +3873,7 @@ body {
 }
 @media (max-width: 500px) {
   .invest .container__info-left {
-    width: 265px;
+    margin-right: 15px;
   }
 }
 .invest .container__info-right {
@@ -3879,6 +3883,12 @@ body {
 @media (max-width: 1440px) {
   .invest .container__info-right {
     max-width: 249px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .invest .container__info-right {
+    display: none;
   }
 }
 .invest .container__info-title {
@@ -3908,7 +3918,6 @@ body {
     display: inline-block;
     opacity: 0.6;
     margin-bottom: 20px;
-    width: 304px;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -3919,7 +3928,7 @@ body {
 }
 @media (max-width: 425px) {
   .invest .container__info-text-mobile {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 }
 .invest .container__info-mobile {
@@ -4188,10 +4197,14 @@ body {
   position: absolute;
   width: 1358px;
   height: 1478px;
-  background-color: black;
   top: 0;
   left: 0;
   background: url("../img/invest/fon.svg") 0 0 no-repeat;
+}
+@media (max-width: 768px) {
+  .invest::before {
+    display: none;
+  }
 }
 
 .team {
@@ -4647,7 +4660,7 @@ body {
 }
 
 .faq {
-  padding: 465px 0 100px 0;
+  padding: 460px 0 100px 0;
   position: relative;
   background: url("../img/FAQ/curve.webp") 0 -390px/100% 80% no-repeat, url("../img/FAQ/curve.png") 0 -390px/100% 80% no-repeat;
 }
@@ -4666,7 +4679,7 @@ body {
   position: relative;
   background: linear-gradient(360deg, rgba(58, 78, 255, 0.15) 0%, rgba(156, 58, 255, 0.44) 100%);
   width: 1320px;
-  height: 1310px;
+  height: 1220px;
   margin: 0px auto;
   padding: 4px;
   clip-path: polygon(5% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 4%);
@@ -4702,8 +4715,8 @@ body {
 .faq__container {
   position: relative;
   background: #10051e url("../img/FAQ/Vector.png") 0 0 repeat-y;
-  padding: 93px 20px 95px 77px;
-  height: 1300px;
+  padding: 89px 20px 95px 77px;
+  height: 1210px;
   clip-path: polygon(5% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 4%);
   position: relative;
 }
@@ -4787,7 +4800,7 @@ body {
   text-align-last: left;
   background-color: transparent;
   color: #fff;
-  padding: 25px 47px 48px 10px;
+  padding: 20px 47px 48px 10px;
   font-size: 30px;
   font-weight: 700;
   line-height: 1.4;
@@ -4900,7 +4913,7 @@ body {
 
 .media {
   position: relative;
-  padding: 110px 0 165px 0;
+  padding: 175px 0 165px 0;
   background: url("../img/social-media/bg.webp") 0 0 no-repeat, url("../img/social-media/bg.png") 0 0 no-repeat;
 }
 @media (max-width: 1220px) {
@@ -4924,7 +4937,7 @@ body {
   position: absolute;
   width: 978px;
   height: 1026px;
-  top: -50%;
+  top: -17%;
   right: 50%;
   transform: translate(50%, 0px);
   background: url("../img/social-media/2.webp") 0 0 no-repeat, url("../img/social-media/2.png") 0 0 no-repeat;
@@ -4952,7 +4965,7 @@ body {
 .media__info {
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 65px;
 }
 .media__swiper {
   display: flex;
@@ -4979,6 +4992,7 @@ body {
   align-items: center;
   min-height: 400px;
   max-width: 280px;
+  margin-right: 5px;
 }
 @media (max-width: 1220px) {
   .media .swiper-wrapper .swiper-slide {
@@ -4996,6 +5010,7 @@ body {
   .media .swiper-wrapper .swiper-slide {
     min-height: 300px;
     max-width: 209px;
+    margin-right: 0;
   }
 }
 .media .swiper-wrapper .swiper-slide .media__item {
