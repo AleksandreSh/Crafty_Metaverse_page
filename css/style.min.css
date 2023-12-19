@@ -3003,7 +3003,7 @@ body {
 .resources__container .container__right::after {
   content: "";
   position: absolute;
-  background: url("../img/our-resources/EllipseMain.png") no-repeat;
+  background: url("../img/our-resources/EllipseMain.webp") no-repeat, url("../img/our-resources/EllipseMain.png") no-repeat;
   top: -158px;
   left: -134px;
   width: 840px;
@@ -3018,9 +3018,8 @@ body {
 }
 @media (max-width: 390px) {
   .resources__container .container__right::after {
-    background: url("../img/our-resources/Gradients2.webp") no-repeat, url("../img/our-resources/Gradients2.png") no-repeat;
+    background: url("../img/our-resources/EllipseMain.webp") no-repeat, url("../img/our-resources/EllipseMain.png") no-repeat;
     top: -132px;
-    left: -16px;
     width: 1263px;
     height: 1250px;
   }
@@ -3214,6 +3213,13 @@ body {
 .blur-first {
   position: absolute;
   top: -223px;
+}
+@media (max-width: 1024px) {
+  .blur-first {
+    height: 1000px;
+    width: 1000px;
+    top: 560px;
+  }
 }
 
 .game {
