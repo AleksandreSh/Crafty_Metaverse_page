@@ -3413,7 +3413,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  background: url("../img/Game/Vector.png");
+  background: url("../img/Game/Vector.webp"), url("../img/Game/Vector.png");
 }
 @media (max-width: 1200px) {
   .game .container__center {
