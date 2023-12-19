@@ -4318,6 +4318,21 @@ body {
   }
 }
 
+.invest-blur {
+  display: none;
+}
+@media (max-width: 390px) {
+  .invest-blur {
+    display: inline;
+    position: relative;
+    z-index: -1;
+    width: 1021px;
+    height: 1000px;
+    top: -164px;
+    right: 12px;
+    transform: rotate(30deg);
+  }
+}
 .invest__star {
   position: absolute;
   right: 518px;
