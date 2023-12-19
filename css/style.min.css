@@ -898,104 +898,6 @@ a {
   color: inherit;
 }
 
-@font-face {
-  font-family: "HeliosBlackC";
-  src: local("Alethia Next Light"), local("AlethiaNext-Light"), url("../fonts/HeliosBlackC_Regular.otf");
-  font-weight: 400;
-  font-style: normal;
-  font-family: "HeliosExtC";
-  src: local("Alethia Next Light"), local("AlethiaNext-Light"), url("../fonts/HeliosExtC_Regular.otf");
-  font-weight: 400;
-  font-style: normal;
-  font-family: "HeliosExtC";
-  src: local("Alethia Next Light"), local("AlethiaNext-Light"), url("../fonts/HeliosExtC_Bold.otf");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: Gilroy;
-  src: url(../fonts/GilroyBold.woff2) format("woff2");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: Gilroy;
-  src: url(../fonts/GilroyMedium.woff2) format("woff2");
-  font-weight: 500;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: Gilroy;
-  src: url(../fonts/GilroyRegular.woff2) format("woff2");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: Helios;
-  src: url(../fonts/HeliosBlackC.woff2) format("woff2");
-  font-weight: 900;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: Helios;
-  src: url(../fonts/HeliosExtCBold.woff2) format("woff2");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: Mandatory;
-  src: url(../fonts/MandatoryRegular.woff2) format("woff2");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: PlusJakarta;
-  src: url(../fonts/PlusJakartaRegular.woff2) format("woff2");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: PlusJakarta;
-  src: url(../fonts/PlusJakartaMedium.woff2) format("woff2");
-  font-weight: 500;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: PlusJakarta;
-  src: url(../fonts/PlusJakartaLight.woff2) format("woff2");
-  font-weight: 300;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: PlusJakarta;
-  src: url(../fonts/PlusJakartaBold.woff2) format("woff2");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "HeliosBlackC";
-  src: local("Alethia Next Light"), local("AlethiaNext-Light"), url("../fonts/HeliosBlackC_Regular.otf");
-  font-weight: 400;
-  font-style: normal;
-  font-family: "HeliosExtC";
-  src: local("Alethia Next Light"), local("AlethiaNext-Light"), url("../fonts/HeliosExtC_Regular.otf");
-  font-weight: 400;
-  font-style: normal;
-  font-family: "HeliosExtC";
-  src: local("Alethia Next Light"), local("AlethiaNext-Light"), url("src/fonts/HeliosExtC_Bold.otf");
-  font-weight: 700;
-  font-style: normal;
-}
 html,
 body {
   height: 100%;
@@ -1027,7 +929,6 @@ h1 {
 }
 
 h2 {
-  font-family: Helios, sans-serif;
   font-weight: 700;
   font-size: 48px;
   letter-spacing: 7px;
@@ -1146,7 +1047,7 @@ body {
   content: "";
   position: absolute;
   width: 6px;
-  height: 104%;
+  height: 100%;
   top: 0;
   left: 0;
   border-radius: 41px;
@@ -1161,6 +1062,7 @@ body {
 }
 
 .blur {
+  z-index: -1;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -3027,7 +2929,7 @@ body {
   height: 100%;
   right: 44px;
   top: 2px;
-  background: url("../img/our-resources/mulo.png");
+  background: linear-gradient(268.83deg, rgba(58, 78, 255, 0) -0.39%, rgba(216, 58, 255, 0.1) 102.63%);
 }
 @media (max-width: 1450px) {
   .resources__container .container__left::before {
@@ -3101,7 +3003,7 @@ body {
 .resources__container .container__right::after {
   content: "";
   position: absolute;
-  background: url("../img/our-resources/Gradients.webp") no-repeat, url("../img/our-resources/Gradients.png") no-repeat;
+  background: url("../img/our-resources/EllipseMain.png") no-repeat;
   top: -158px;
   left: -134px;
   width: 840px;
@@ -3304,6 +3206,7 @@ body {
 }
 
 .blur {
+  z-index: -1;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -3484,7 +3387,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  background: url("../img/Game/mulo.png") repeat-x;
+  background: linear-gradient(180deg, rgba(58, 78, 255, 0) 0%, rgba(156, 58, 255, 0.14) 100%);
 }
 @media (max-width: 1024px) {
   .game .container__center {
@@ -4411,7 +4314,7 @@ body {
   z-index: -1;
   position: absolute;
   width: 1381px;
-  height: 1035px;
+  height: 642px;
   top: 0;
   right: 444px;
 }
