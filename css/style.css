@@ -782,25 +782,33 @@ button.swiper-pagination-bullet {
   font-style: normal;
 }
 @font-face {
-  font-family: "Open Sans Condensed";
-  src: url("OpenSansCondensed-Light.eot");
-  src: local("Open Sans Condensed Light"), local("OpenSansCondensed-Light"), url("OpenSansCondensed-Light.eot?#iefix") format("embedded-opentype"), url("OpenSansCondensed-Light.woff") format("woff"), url("OpenSansCondensed-Light.ttf") format("truetype");
+  font-family: "OpenSansCondensed";
+  src: url("../OpenSansCondensed-Light.eot");
+  src: local("Open Sans Condensed Light"), local("../OpenSansCondensed-Light"), url("../OpenSansCondensed-Light.eot?#iefix") format("embedded-opentype"), url("../OpenSansCondensed-Light.woff") format("woff"), url("../OpenSansCondensed-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: "Open Sans Condensed";
-  src: url("OpenSansCondensed-Bold.eot");
-  src: local("Open Sans Condensed Bold"), local("OpenSansCondensed-Bold"), url("OpenSansCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("OpenSansCondensed-Bold.woff") format("woff"), url("OpenSansCondensed-Bold.ttf") format("truetype");
+  font-family: "OpenSansCondensed";
+  src: url("../OpenSansCondensed-Bold.eot");
+  src: local("Open Sans Condensed Bold"), local("OpenSansCondensed-Bold"), url("../OpenSansCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../OpenSansCondensed-Bold.woff") format("woff"), url("../OpenSansCondensed-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: "Open Sans Condensed";
-  src: url("OpenSansCondensed-LightItalic.eot");
-  src: local("Open Sans Condensed Light Italic"), local("OpenSansCondensed-LightItalic"), url("OpenSansCondensed-LightItalic.eot?#iefix") format("embedded-opentype"), url("OpenSansCondensed-LightItalic.woff") format("woff"), url("OpenSansCondensed-LightItalic.ttf") format("truetype");
+  font-family: "OpenSansCondensed";
+  src: url("..OpenSansCondensed-LightItalic.eot");
+  src: local("Open Sans Condensed Light Italic"), local("../OpenSansCondensed-LightItalic"), url("../OpenSansCondensed-LightItalic.eot?#iefix") format("embedded-opentype"), url("../OpenSansCondensed-LightItalic.woff") format("woff"), url("../OpenSansCondensed-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
+}
+@font-face {
+  font-family: "fontb7c6d50eed397787058c1399fb8b79df";
+  src: url("https://nomail.com.ua/files/eot/b7c6d50eed397787058c1399fb8b79df.eot?#iefix") format("embedded-opentype"), url("https://nomail.com.ua/files/woff/b7c6d50eed397787058c1399fb8b79df.woff") format("woff"), url("https://nomail.com.ua/files/woff2/b7c6d50eed397787058c1399fb8b79df.woff2") format("woff2");
+}
+@font-face {
+  font-family: "HeliosExtC-Bold";
+  src: local("HeliosExtC-Bold"), url("https://nomail.com.ua/files/woff/b7c6d50eed397787058c1399fb8b79df.woff") format("woff");
 }
 * {
   padding: 0;
@@ -898,6 +906,34 @@ a {
   color: inherit;
 }
 
+@font-face {
+  font-family: "HeliosExtC";
+  src: url("HeliosExtC-Bold.woff2") format("woff2"), url("../HeliosExtC-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HeliosBlackC";
+  src: url("HeliosBlackC.woff2") format("woff2"), url("HeliosBlackC.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HeliosBlackC";
+  src: local("Alethia Next Light"), local("AlethiaNext-Light"), url("../fonts/HeliosBlackC_Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-family: "HeliosExtC";
+  src: local("Alethia Next Light"), local("AlethiaNext-Light"), url("../fonts/HeliosExtC_Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-family: "HeliosExtC";
+  src: local("Alethia Next Light"), local("AlethiaNext-Light"), url("../fonts/HeliosExtC_Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
 html,
 body {
   height: 100%;
@@ -1511,6 +1547,20 @@ body {
   left: 62px;
 }
 
+@font-face {
+  font-family: "HeliosExtC";
+  src: url("../HeliosExtC-Bold.woff2") format("woff2"), url("./_fonts/fonts.scss") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HeliosBlackC";
+  src: url("HeliosBlackC.woff2") format("woff2"), url("HeliosBlackC.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 .shared {
   position: relative;
   height: 1024px;
@@ -4770,7 +4820,7 @@ body {
 }
 @media (max-width: 1440px) {
   .baner-bottom.small {
-    top: 1920px;
+    top: 1727px;
   }
 }
 @media (max-width: 1024px) {
@@ -4851,6 +4901,11 @@ body {
   padding: 460px 0 100px 0;
   position: relative;
   background: url("../img/FAQ/curve.webp") 0 -390px/100% 80% no-repeat, url("../img/FAQ/curve.png") 0 -390px/100% 80% no-repeat;
+}
+@media (max-width: 1440px) {
+  .faq {
+    padding: 378px 0 100px 0;
+  }
 }
 @media (max-width: 768px) {
   .faq {
@@ -5240,7 +5295,7 @@ body {
   z-index: -1;
   width: 1027px;
   height: 1274px;
-  top: -192px;
+  top: -122px;
   left: -15px;
   background: url("../img/social-media/1.webp") 0 0 no-repeat, url("../img/social-media/1.png") 0 0 no-repeat;
 }
