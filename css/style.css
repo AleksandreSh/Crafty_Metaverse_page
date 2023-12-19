@@ -3413,7 +3413,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  background: url("../img/game/Vector.png");
+  background: url("../img/Game/Vector.png");
 }
 @media (max-width: 1200px) {
   .game .container__center {
@@ -5074,8 +5074,8 @@ body {
 
 .star-dis {
   position: absolute;
-  top: -24px;
-  right: 180px;
+  top: 0px;
+  right: 183px;
 }
 @media (max-width: 768px) {
   .star-dis {
