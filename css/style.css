@@ -2551,6 +2551,7 @@ body {
 }
 
 .brand {
+  z-index: 2;
   position: relative;
   background-color: #18072d;
 }
@@ -2834,6 +2835,7 @@ body {
   height: 100%;
   width: 100%;
   background: url("../img/our-brands/Vector.svg") 0 0 repeat;
+  background-image: url("../img/our-brands/Vector.svg") 0 0 repeat;
 }
 
 .star-card {
