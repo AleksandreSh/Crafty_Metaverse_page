@@ -1555,7 +1555,7 @@ body {
     letter-spacing: 0em;
     text-align: left;
     width: 175px;
-    min-height: 54px;
+    min-height: 62px;
   }
 }
 
@@ -3956,22 +3956,22 @@ body {
 }
 @media (max-width: 1024px) {
   .baner.small {
-    top: -130px;
+    top: -84px;
   }
 }
 @media (max-width: 768px) {
   .baner.small {
-    top: -13px;
+    top: 29px;
   }
 }
 @media (max-width: 570px) {
   .baner.small {
-    top: -77px;
+    top: -10px;
   }
 }
 @media (max-width: 425px) {
   .baner.small {
-    top: -93px;
+    top: -42px;
   }
 }
 .baner.small span {
@@ -4041,7 +4041,7 @@ body {
 }
 
 .invest {
-  padding: 240px 0 120px 0;
+  padding: 240px 0 135px 0;
   display: flex;
   position: relative;
   z-index: 1;
@@ -4059,7 +4059,7 @@ body {
 }
 @media (max-width: 425px) {
   .invest {
-    padding: 58px 0 213px 0;
+    padding: 58px 0 208px 0;
     background: url("../img/invest/MaskGroup.webp")-227px 68.3%/145% no-repeat, url("../img/invest/MaskGroup.png") -227px 68.3%/145% no-repeat;
   }
 }
@@ -4228,7 +4228,7 @@ body {
 }
 @media (max-width: 425px) {
   .invest .container__left {
-    padding: 50px 0px 199px 25px;
+    padding: 53px 0px 199px 25px;
   }
 }
 .invest .container__right {
@@ -4272,6 +4272,9 @@ body {
 @media (max-width: 768px) {
   .invest .container__item-title {
     margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 31px;
   }
 }
 .invest .container__item-text {
@@ -4301,6 +4304,7 @@ body {
     display: inline-block;
     opacity: 0.6;
     margin-bottom: 20px;
+    font-family: "Plus Jakarta Display";
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -4330,7 +4334,7 @@ body {
 }
 .invest .container__text {
   margin-bottom: 35px;
-  line-height: 1.6;
+  font-family: " Plus Jakarta Display";
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -4340,6 +4344,7 @@ body {
   top: -13px;
 }
 .invest .container__text {
+  font-family: " Plus Jakarta Display", sans-serif;
   opacity: 0.6;
   font-size: 20px;
   font-weight: 400;
@@ -4364,7 +4369,7 @@ body {
   }
 }
 .invest .container__body-left {
-  margin-right: 50px;
+  margin-right: 15px;
   max-width: 445px;
 }
 @media (max-width: 1023px) {
@@ -4384,7 +4389,13 @@ body {
   }
 }
 .invest .container__body-right {
-  max-width: 435px;
+  font-family: "Plus Jakarta Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 438px;
   align-self: center;
   margin-bottom: 25px;
 }
@@ -4399,6 +4410,12 @@ body {
   }
 }
 .invest .container__head {
+  font-family: "HeliosExtC";
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
@@ -4412,8 +4429,13 @@ body {
     margin-bottom: 30px;
   }
 }
+@media (max-width: 425px) {
+  .invest .container__head {
+    margin-bottom: 15px;
+  }
+}
 .invest .container__info {
-  padding: 70px 102px 65px 100px;
+  padding: 80px 98px 52px 91px;
   position: relative;
 }
 @media (max-width: 1440px) {
@@ -4426,11 +4448,16 @@ body {
     padding: 40px 20px 50px 35px;
   }
 }
+@media (max-width: 435px) {
+  .invest .container__info {
+    padding: 52px 20px 75px 35px;
+  }
+}
 .invest .container__info-row {
   display: flex;
 }
 .invest .container__info-text {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 @media (max-width: 768px) {
   .invest .container__info-text {
@@ -4444,6 +4471,8 @@ body {
   .invest .container__info-mobile {
     display: inline-block;
     margin-bottom: 75px;
+    opacity: 0.7;
+    margin-bottom: 35px;
   }
 }
 .invest__images {
@@ -4685,13 +4714,13 @@ body {
 @media (max-width: 768px) {
   .invest__star-second {
     right: 95px;
-    top: -230px;
+    top: -239px;
   }
 }
 
 .team {
   position: relative;
-  padding: 145px 0 0 0;
+  padding: 155px 0 0 0;
   background: url("../img/our-team/lines.webp") 0 0 no-repeat;
   z-index: 1;
 }
@@ -4755,7 +4784,7 @@ body {
   flex-direction: column;
 }
 .team__column .card__img {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4772,6 +4801,7 @@ body {
   line-height: 1.4;
   text-align: center;
   opacity: 0.6;
+  margin-bottom: 5px;
 }
 .team__column .card__name {
   font-size: 45px;
@@ -4866,8 +4896,8 @@ body {
 }
 @media (max-width: 768px) {
   .team__column:nth-child(4) .card__img::after {
-    bottom: 10.8%;
-    right: 38.4%;
+    bottom: 7.8%;
+    right: 25.4%;
   }
 }
 .team__column:nth-child(4) .card__name {
@@ -4889,6 +4919,8 @@ body {
 @media (max-width: 1024px) {
   .star-small {
     display: inline;
+    margin-right: 16px;
+    margin-left: 20px;
   }
 }
 
@@ -4907,7 +4939,7 @@ body {
     left: -2px;
   }
 }
-.blur__team ::nth-child(1) {
+.blur__team :nth-child(1) {
   z-index: -1;
   position: absolute;
   width: 1062px;
@@ -4916,13 +4948,13 @@ body {
   left: 531px;
 }
 @media (max-width: 786px) {
-  .blur__team ::nth-child(1) {
+  .blur__team :nth-child(1) {
     top: 133px;
     left: -194px;
   }
 }
 @media (max-width: 425px) {
-  .blur__team ::nth-child(1) {
+  .blur__team :nth-child(1) {
     top: 211px;
     left: -178px;
     width: 448px;
@@ -4939,7 +4971,18 @@ body {
 }
 @media (max-width: 786px) {
   .blur__team :nth-child(2) {
-    right: 0;
+    right: -359px;
+    width: 1381px;
+    height: 642px;
+    top: 139px;
+  }
+}
+@media (max-width: 786px) {
+  .blur__team :nth-child(2) {
+    right: 6px;
+    width: 1790px;
+    height: 648px;
+    top: 130px;
   }
 }
 .blur__team :nth-child(3) {
@@ -5078,7 +5121,7 @@ body {
   z-index: 1000;
   background-color: #000;
   border: none;
-  top: 1315px;
+  top: 1294px;
   left: -461px;
 }
 @media (max-width: 1440px) {
@@ -5093,17 +5136,22 @@ body {
     line-height: 46px;
     letter-spacing: 0.01em;
     text-align: right;
-    top: 1745px;
+    top: 1728px;
   }
 }
 @media (max-width: 768px) {
   .baner-bottom.small {
-    top: 3029px;
+    top: 2970px;
+  }
+}
+@media (max-width: 580px) {
+  .baner-bottom.small {
+    top: 2970px;
   }
 }
 @media (max-width: 425px) {
   .baner-bottom.small {
-    top: 2730px;
+    top: 2681px;
   }
 }
 .baner-bottom.small span {
@@ -5121,6 +5169,7 @@ body {
     line-height: 46px;
     letter-spacing: 0.01em;
     text-align: right;
+    margin-right: 0px;
   }
 }
 .baner-bottom__container-small {
@@ -5173,7 +5222,12 @@ body {
 }
 @media (max-width: 775px) {
   .faq {
-    padding: 180px 0 60px 0;
+    padding: 55px 0 60px 0;
+  }
+}
+@media (max-width: 425px) {
+  .faq {
+    padding: 151px 0 60px 0;
   }
 }
 .faq__con {
@@ -5319,13 +5373,18 @@ body {
   .faq__container {
     background: #18072d url("../img/FAQ/Vector-mb.png") 0 0 repeat-y;
     height: 990px;
-    padding: 55px 13px 20px 3px;
+    padding: 58px 13px 20px 3px;
     clip-path: polygon(9% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 2%);
   }
 }
 @media (max-width: 325px) {
   .faq__container {
     height: 1140px;
+  }
+}
+@media (max-width: 425px) {
+  .faq__title {
+    margin-bottom: 15px;
   }
 }
 .faq__info .info__item {
@@ -5385,6 +5444,7 @@ body {
   .faq__info .info__btn {
     padding: 20px 47px 48px 1px;
     margin-bottom: 14px;
+    text-align: left;
   }
 }
 @media (max-width: 435px) {
@@ -5482,7 +5542,7 @@ body {
   transform: translate(50%, 0px);
   background: url("../img/social-media/2.webp") 0 0 no-repeat, url("../img/social-media/2.png") 0 0 no-repeat;
 }
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   .media__con::before {
     display: none;
   }
@@ -5607,11 +5667,18 @@ body {
     background: url("../img/social-media/blur2.png") 0 0 no-repeat;
   }
 }
+@media (max-width: 600px) {
+  .media::after {
+    top: 184px;
+    right: -110px;
+  }
+}
 @media (max-width: 425px) {
   .media::after {
     width: 406px;
     height: 966px;
     top: 145px;
+    right: 27px;
   }
 }
 
