@@ -22,20 +22,6 @@
   font-style: italic;
   font-display: swap;
 }
-@font-face {
-  font-family: "Gilroy-Regular";
-  src: local("Gilroy-Regular"), local("Gilroy Regular"), url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Gilroy-Bold";
-  src: local("Gilroy-Bold"), local("Gilroy Bold"), url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-}
 /**
  * Swiper 8.4.7
  * Most modern mobile touch slider and framework with hardware accelerated transitions
